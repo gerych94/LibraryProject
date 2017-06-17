@@ -1,0 +1,27 @@
+
+<%@page import="model.Genre" %>
+<%@ page pageEncoding="UTF-8" %>
+<div class="sidebar1">
+    <h4>Жанры:</h4>
+    <ul class="nav">
+        <jsp:useBean id="genreList" class="dao.GenreDaoJNDI" scope="application"/>
+        <%
+            if(request.getParameter("genre_id")!=null){
+                session.setAttribute("name",request.getParameter("genre_id"));
+            }else {
+                session.setAttribute("name",null);
+            };
+
+            for ( Genre genre : genreList.getGenreList()) {
+        %>
+        <%if (session.getAttribute("name") != null && Integer.valueOf(session.getAttribute("name").toString()) == genre.getId()) {%>
+        <li><a style="color: #378de5"
+               href="books.jsp?genre_id=<%=genre.getId()%>&name=<%=genre.getGenreName()%>"><%=genre.getGenreName()%>
+        </a></li>
+        <%} else {%>
+        <li><a href="books.jsp?genre_id=<%=genre.getId()%>&name=<%=genre.getGenreName()%>"><%=genre.getGenreName()%>
+        </a></li>
+        <%}%>
+        <%}%>
+    </ul>
+</div>

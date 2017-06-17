@@ -1,0 +1,24 @@
+<%@ page pageEncoding="UTF-8" %>
+
+
+<div class="letters">
+    <jsp:useBean id="letterList" class="beans.LetterList" scope="application"/>
+    <%
+        if (request.getParameter("letter") != null) {
+            session.setAttribute("letter", request.getParameter("letter"));
+        } else {
+            session.setAttribute("letter", null);
+        }
+        char[] letters = letterList.getRussianLetters();
+        for (int i = 0; i < letters.length; i++) {
+    %>
+    <%if (session.getAttribute("letter") != null && session.getAttribute("letter").toString().equals(String.valueOf(letters[i]))) {%>
+    <a style="color: #378de5" href="books.jsp?letter=<%=letters[i]%>"><%=letters[i]%>
+    </a>
+    <%} else {%>
+    <a href="books.jsp?letter=<%=letters[i]%>"><%=letters[i]%>
+    </a>
+    <%}%>
+    <%
+        }%>
+</div>

@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SecondServlet:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SecondServlet_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="LibraryProject/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="LibraryProject" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Downloads/taglibs-standard-compat-1.2.5.jar" />
+          <element id="library" level="project" name="taglibs-standard-jstlel-1.2.5" />
+          <element id="library" level="project" name="OpenFaces-3.0" />
+          <element id="library" level="project" name="PrimeFaces-5.2" />
+          <element id="library" level="project" name="Richfaces-4.2.2" />
+          <element id="library" level="project" name="jsf-impl-2.2.14" />
+          <element id="library" level="project" name="mojarra-jsf-impl-2.0.0-b04" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
