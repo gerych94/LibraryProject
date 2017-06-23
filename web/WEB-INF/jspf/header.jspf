@@ -10,13 +10,12 @@
             request.setCharacterEncoding("UTF-8");
             if(session.getAttribute("username")==null)
                 session.setAttribute("username",request.getParameter("username"));
-
         %>
         <div class="container">
             <div class="header">
                 <div class="welcome">
                 <h5>Добро пожаловать, <%=session.getAttribute("username")%> !</h5>
-                <h6><a href="../index.jsp">Выход</a></h6>
+                <h6><a href="<%=request.getContextPath()%>/index.jsp">Выход</a></h6>
             </div>
                 <div class="logo">
                     <img src="../images/logo.jpg" alt="Логотип" name="logo" />

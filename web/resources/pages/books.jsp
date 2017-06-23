@@ -6,8 +6,8 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 
-<%@include file="../WEB-INF/jspf/left_menu.jspf" %>
-<%@include file="../WEB-INF/jspf/letters.jspf" %>
+<%@include file="/WEB-INF/jspf/left_menu.jspf" %>
+<%@include file="/WEB-INF/jspf/letters.jspf" %>
 <jsp:useBean id="bookList" class="dao.BookDaoJNDI" scope="page"/>
 <%
     request.setCharacterEncoding("UTF-8");

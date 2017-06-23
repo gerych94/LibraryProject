@@ -31,12 +31,10 @@
     <orderEntry type="library" exported="" name="Richfaces-4.2.2" level="project" />
     <orderEntry type="library" exported="" name="PrimeFaces-5.2" level="project" />
     <orderEntry type="library" exported="" name="IceFaces-3.1.0" level="project" />
-    <orderEntry type="library" exported="" name="jsf-impl-2.2.14" level="project" />
-    <orderEntry type="library" exported="" name="mojarra-jsf-impl-2.0.0-b04" level="project" />
     <orderEntry type="library" name="IceFaces-3.1.0" level="project" />
     <orderEntry type="library" name="OpenFaces-3.0" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.faces:jsf-api:2.1.7" level="project" />
-    <orderEntry type="library" name="Maven: com.sun.faces:jsf-impl:2.1.7" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" exported="" name="Maven: com.sun.faces:jsf-api:2.1.7" level="project" />
+    <orderEntry type="library" exported="" name="Maven: com.sun.faces:jsf-impl:2.1.7" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
   </component>
 </module>

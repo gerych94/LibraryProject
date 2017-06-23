@@ -13,8 +13,6 @@
           <element id="library" level="project" name="OpenFaces-3.0" />
           <element id="library" level="project" name="PrimeFaces-5.2" />
           <element id="library" level="project" name="Richfaces-4.2.2" />
-          <element id="library" level="project" name="jsf-impl-2.2.14" />
-          <element id="library" level="project" name="mojarra-jsf-impl-2.0.0-b04" />
         </element>
       </element>
     </root>

@@ -31,7 +31,7 @@
     <jsp-config>
         <jsp-property-group>
             <display-name>header_and_footer</display-name>
-            <url-pattern>/pages/*</url-pattern>
+            <url-pattern>/resources/pages/*</url-pattern>
             <page-encoding>UTF-8</page-encoding>
             <include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
             <include-coda>/WEB-INF/jspf/footer.jspf</include-coda>
@@ -47,6 +47,6 @@
           <session-timeout>30</session-timeout>
       </session-config>
     <welcome-file-list>
-        <welcome-file>index.xhtml</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

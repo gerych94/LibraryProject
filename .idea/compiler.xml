@@ -9,7 +9,7 @@
         <module name="LibraryProject" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="LibraryProject" target="1.8" />
     </bytecodeTargetLevel>
   </component>
