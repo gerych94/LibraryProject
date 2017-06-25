@@ -20,14 +20,13 @@
                 <div class="logo">
                     <img src="../images/logo.jpg" alt="Логотип" name="logo" />
                 </div>
-
                 <div class="search_form">
                     <form name="search_form" method="GET" action="../pages/books.jsp">
                         <img src="../images/search.jpg"/>
                         <%if(request.getParameter("search_String")!=null){%>
                         <input type="text" name="search_String" value="<%=request.getParameter("search_String")%>" size="100" />
                         <%} else {%>
-                        <input type="text" name="search_String" value="" size="100" />
+                        <input type="text" name="search_String" value="" size="100" autocomplete="off"/>
                         <%}%>
                         <input class="search_button" type="submit" value="Поиск" name="search_button" />
                         <select name="search_option">

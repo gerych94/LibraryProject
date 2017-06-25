@@ -13,6 +13,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Онлайн библиотека::Вход</title>
   <link href="resources/css/style_index.css" rel="stylesheet" type="text/css">
+  <script src="resources/js/validationName.js" type="text/javascript"></script>
 </head>
   <body>
   <div class="main">
@@ -26,11 +27,10 @@
     </div>
     <div class="login_div">
       <p class="title">Для входа введите свои данные:</p>
-      <form class="login_form" name="username" action="resources/pages/main.jsp" method="POST">
-        Имя: <input type="text" name="username" value="" size="20" />
+      <form class="login_form" name="username" action="resources/pages/main.jsp" method="POST" onsubmit="return validateform()">
+        Имя: <input type="text" name="username" value="" size="20" autocomplete="off"/>
         <input type="submit" value="Войти" />
       </form>
-
     </div>
 
     <div class="footer">

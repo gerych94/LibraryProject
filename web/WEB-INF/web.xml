@@ -3,27 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-    <servlet>
-        <servlet-name>ServletSecond</servlet-name>
-        <servlet-class>ServletSecond</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>СalculatorServlet</servlet-name>
-        <servlet-class>eighteenTask.СalculatorServlet</servlet-class>
-    </servlet>
+
+
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>ServletSecond</servlet-name>
-        <url-pattern>/ServletSecond</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>СalculatorServlet</servlet-name>
-        <url-pattern>/СalculatorServlet</url-pattern>
-    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
@@ -49,4 +36,5 @@
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
 </web-app>

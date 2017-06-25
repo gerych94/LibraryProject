@@ -15,7 +15,6 @@
 <div class="book_list">
     <h3>${param.name}</h3>
     <table cellpadding="30" style="font-size: 12px;">
-
         <%
             List<Book> bookArrayList = null;
 
@@ -34,7 +33,6 @@
         <%
             for (Book book : bookArrayList) {
         %>
-
         <div class="book_info">
             <div class="book_title">
                 <p><%=book.getBookName()%>
