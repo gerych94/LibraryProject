@@ -28,7 +28,7 @@
             }
             session.setAttribute("currentBookList", bookArrayList);
             session.setAttribute("BookDao",bookList); %>
-        <h5 style="text-align: left; margin-top:20px;">Найдено книг: <%=bookArrayList.size() %>
+        <h5 style="text-align: left; margin-top:5px;">Найдено книг: <%=bookArrayList.size() %>
         </h5>
         <%
             for (Book book : bookArrayList) {
