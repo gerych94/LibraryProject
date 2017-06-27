@@ -48,7 +48,9 @@
                 <br><strong>Количество страниц:</strong> <%=book.getPageCount() %>
                 <br><strong>Год издания:</strong> <%=book.getPublishYear() %>
                 <br><strong>Автор:</strong> <%=book.getAuthor() %>
-                <p style="margin:10px;"><a href="<%=request.getContextPath()%>/PdfContentServlet?index=<%=bookArrayList.indexOf(book)%>">Читать</a></p>
+                <p style="margin:10px;"><a style="margin:5px;" href="<%=request.getContextPath()%>/PdfContentServlet?index=<%=bookArrayList.indexOf(book)%>">Читать</a>
+                <img src="../images/download.png"/>
+                <a href="<%=request.getContextPath()%>/PdfDownloadServlet?index=<%=bookArrayList.indexOf(book)%>">Скачать</a></p>
             </div>
         </div>
         <%}%>
