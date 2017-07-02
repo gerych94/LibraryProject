@@ -1,11 +1,10 @@
 <%@page import="model.Book" %>
-
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <%@ page import="emums.SearchType" %>
+<%@ page import="java.net.URLEncoder" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-
 <%@include file="/WEB-INF/jspf/left_menu.jspf" %>
 <%@include file="/WEB-INF/jspf/letters.jspf" %>
 <jsp:useBean id="bookList" class="dao.BookDaoJNDI" scope="page"/>
@@ -17,7 +16,6 @@
     <table cellpadding="30" style="font-size: 12px;">
         <%
             List<Book> bookArrayList = null;
-
             if (request.getParameter("genre_id") != null) {
                 bookArrayList = bookList.getBookListByGenreID(Integer.valueOf(request.getParameter("genre_id")));
             } else if (request.getParameter("letter") != null) {
@@ -29,7 +27,8 @@
             session.setAttribute("currentBookList", bookArrayList);
             session.setAttribute("BookDao",bookList); %>
         <h5 style="text-align: left; margin-top:5px;">Найдено книг: <%=bookArrayList.size() %>
-        </h5>
+            </h5>
+
         <%
             for (Book book : bookArrayList) {
         %>

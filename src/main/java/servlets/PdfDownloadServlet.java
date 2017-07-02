@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.net.URLEncoder;
 import java.util.List;
 
 /**
@@ -26,7 +27,7 @@ public class PdfDownloadServlet extends HttpServlet {
         Book book=bookList.get(Integer.parseInt(req.getParameter("index")));
         BookDaoJNDI bookDaoJNDI= (BookDaoJNDI) req.getSession().getAttribute("BookDao");
         book.setContent(bookDaoJNDI.getBookContent(book.getId()));
-        resp.setHeader("Content-Disposition","attachment;filename="+book.getBookName()+".pdf");
+        resp.setHeader("Content-Disposition","attachment;filename="+URLEncoder.encode(book.getBookName(),"UTF-8")+".pdf");
         outputStream.write(book.getContent());
     }
 }
