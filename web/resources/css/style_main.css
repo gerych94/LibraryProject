@@ -22,6 +22,15 @@ h1, h2, h3, h4, h5, h6, p {
 	padding-right: 15px;
 	padding-left: 15px;
 }
+h5 {
+	display: block;
+	font-size: 0.83em;
+	-webkit-margin-before: 1.67em;
+	-webkit-margin-after: 0.7em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
 
 a img {
 	border: none;
@@ -54,7 +63,7 @@ a:hover, a:active, a:focus {
 
 .sidebar1 {
 	float: left;
-	width: 25%;
+	width: 20%;
 	padding-bottom: 10px;
 	margin: 10px;
 }
@@ -142,26 +151,26 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 .book_title p{
 	color:#378de5 ;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 14px;
 	padding: 0;
 	margin: 0;
 }
 
 .book_title{
-	height: 50px;
+	height: 40px;
 	float:left;
 }
 
 .book_info{
-	width: 210px;
-	height: 450px;
+	width: 220px;
+	height: 430px;
 	font-size: 12px;
 	float:left;
 	margin:5px;
 }
 
 .book_image{
-	height: 260px;
+	height: 245px;
 	float:left;
 
 }
@@ -181,4 +190,5 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
 	text-decoration: none;
 	font-size: 15px;
 	font-weight: bold;
+	width: 10px;
 }
