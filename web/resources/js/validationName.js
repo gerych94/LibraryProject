@@ -2,7 +2,7 @@
  * Created by Vitaliy on 25.06.2017.
  */
 function validateform() {
-    var name = document.username.username.value;
+    var name = document.username.j_username.value;
     if (name == null || name == "") {
         alert("Name can't be blank");
         return false;

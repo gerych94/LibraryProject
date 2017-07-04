@@ -15,6 +15,7 @@
     <h3>${param.name}</h3>
     <table cellpadding="30" style="font-size: 12px;">
         <%
+
             List<Book> bookArrayList = null;
             if (request.getParameter("genre_id") != null) {
                 bookArrayList = bookList.getBookListByGenreID(Integer.valueOf(request.getParameter("genre_id")));

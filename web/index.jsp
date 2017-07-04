@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%if(session.getAttribute("username")!=null)
+<%if(session.getAttribute("j_username")!=null)
   session.invalidate();%>
 <html>
 <head>
@@ -27,12 +27,13 @@
     </div>
     <div class="login_div">
       <p class="title">Для входа введите свои данные:</p>
-      <form class="login_form" name="username" action="resources/pages/main.jsp" method="POST" onsubmit="return validateform()">
-        Имя: <input type="text" name="username" value="" size="20" autocomplete="off"/>
+     <!-- <form class="login_form" name="username" action="resources/pages/main.jsp" method="POST" onsubmit="return validateform()">-->
+      <form class="login_form" name="username" action="j_security_check" method="POST">
+        Имя: <input type="text" name="j_username" size="20" autocomplete="off"/><br/>
+        Пароль: <input type="password" name="j_password" size="20" autocomplete="off"/>
         <input type="submit" value="Войти" />
       </form>
     </div>
-
     <div class="footer">
       Разработчик: Виталий Кондратюк, 2017 г
     </div>
