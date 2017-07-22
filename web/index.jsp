@@ -27,8 +27,8 @@
     </div>
     <div class="login_div">
       <p class="title">Для входа введите свои данные:</p>
-     <!-- <form class="login_form" name="username" action="resources/pages/main.jsp" method="POST" onsubmit="return validateform()">-->
-      <form class="login_form" name="username" action="j_security_check" method="POST">
+     <form class="login_form" name="username" action="resources/pages/main.jsp" method="POST" onsubmit="return validateform()">
+     <!-- <form class="login_form" name="username" action="/private" method="POST">-->
         Имя: <input type="text" name="j_username" size="20" autocomplete="off"/><br/>
         Пароль: <input type="password" name="j_password" size="20" autocomplete="off"/>
         <input type="submit" value="Войти" />
