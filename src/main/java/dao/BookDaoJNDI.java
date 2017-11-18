@@ -163,13 +163,13 @@ public class BookDaoJNDI implements IBookDao {
 
     @Override
     public byte[] getBookContent(int bookID) {
-        byte [] bytes=null;
+        byte[] bytes = null;
         try {
             connection = JNDIConnection.getJNDIConnection();
             statement = connection.createStatement();
-            resultSet = statement.executeQuery("SELECT b.content from library.book b WHERE  b.id="+bookID);
-            while (resultSet.next()){
-                bytes=resultSet.getBytes("content");
+            resultSet = statement.executeQuery("SELECT b.content from library.book b WHERE  b.id=" + bookID);
+            while (resultSet.next()) {
+                bytes = resultSet.getBytes("content");
             }
             return bytes;
         } catch (SQLException e) {

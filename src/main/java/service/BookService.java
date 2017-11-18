@@ -11,29 +11,36 @@ import java.util.List;
  */
 public class BookService implements IBookService {
 
-    private IBookDao iBookDao;
+    private IBookDao IbookDao;
 
-    public BookService(IBookDao iBookDao){
-        this.iBookDao=iBookDao;
+    public BookService() {
+    }
+
+    public IBookDao getIbookDao() {
+        return IbookDao;
+    }
+
+    public void setIbookDao(IBookDao IbookDao) {
+        this.IbookDao = IbookDao;
     }
 
     @Override
     public List<Book> getBookList() {
-        return iBookDao.getBookList();
+        return IbookDao.getBookList();
     }
 
     @Override
     public List<Book> getBookListByGenreID(int genreID) {
-        return iBookDao.getBookListByGenreID(genreID);
+        return IbookDao.getBookListByGenreID(genreID);
     }
 
     @Override
     public List<Book> getBookListByFirstLetter(String letter) {
-        return iBookDao.getBookListByFirstLetter(letter);
+        return IbookDao.getBookListByFirstLetter(letter);
     }
 
     @Override
     public List<Book> getBookListBySearchType(String searchString, SearchType searchType) {
-        return iBookDao.getListBySearchType(searchString,searchType);
+        return IbookDao.getListBySearchType(searchString, searchType);
     }
 }

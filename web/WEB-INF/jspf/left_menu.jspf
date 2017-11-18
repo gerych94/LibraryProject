@@ -1,5 +1,6 @@
 
 <%@page import="model.Genre" %>
+<%@ page import="entity.GenreEntity" %>
 <%@ page pageEncoding="UTF-8" %>
 <div class="sidebar1">
     <h4>Жанры:</h4>

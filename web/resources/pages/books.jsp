@@ -3,6 +3,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="emums.SearchType" %>
 <%@ page import="java.net.URLEncoder" %>
+<%@ page import="entity.BookEntity" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <%@include file="/WEB-INF/jspf/left_menu.jspf" %>
